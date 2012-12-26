@@ -1,0 +1,30 @@
+#circle a:hover {
+	background: transparent !important;
+}
+#circle {
+	font-family: Georgia;
+	font-size: 22px;
+	font-weight: normal;
+	position: absolute;
+	color: #0f0;
+	line-height: 26px;
+}
+#circle {
+	background: url(../images/circle.png) no-repeat;
+	height: 122px;
+	left: 165px;
+	padding: 20px 30px 25px 0;
+	text-align: center;
+	top: 210px;
+	width: 137px;
+	z-index: 1500;
+}
+
+#circle div {
+	-moz-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg); 
+}
+
+#circle a {
+	color: white;
+}
