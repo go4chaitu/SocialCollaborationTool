@@ -35,7 +35,7 @@
 		}).click(function() {			
 			if( !$("#box").hasClass("placeholder") )
 			{				
-				$("#savedComments").prepend("<div id=\"savedBox\" class=\"savedComment savedCommentMouseOut\" age=\"July 17, 2008\"> "+$("#box").text()+"</div>");
+				$("#savedComments").prepend("<div id=\"savedBox\" class=\"savedComment savedCommentMouseOut\"><div class=\"img\"><a target=\"_blank\" href=\"user.html\"><img src=\"../images/userImg.png\" alt=\"User\" width=\"30\" height=\"30\"></a><div class=\"desc\">Chaitu</div> <span class=\"content\">"+$("#box").text()+"</span><span class='date'>"+jQuery.timeago( "2013-01-03T22:00:19+0000" )+"</span></div>");
 			    $( '.savedComment' ).click(function () 
 						   { 
 			    		       if ( $(this).hasClass("savedCommentMouseIn") )
@@ -57,7 +57,7 @@
 			    		    	   $(this).removeClass("savedCommentMouseIn",500);
 			    		       }						   
 						   });				
-	            $( '.savedComment' ).timeago();
+	            $( '.savedComment' ).timeago($(this).attr("age"));
 			    $("#box").html($("#box").data("placeholder"));           
 	            $("#box").addClass("placeholder");  
 				

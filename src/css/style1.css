@@ -1,10 +1,54 @@
 .placeholder{color:#a0a0a0;}
 
 .highlight { background:yellow; }
-
-.savedCommentMouseOut { width:99%; min-height: 40px; margin-bottom: 10px;
+.date { 
+	right: -550px;
+	bottom: 35px;
+	position: relative;
+	font-size: 10px;
+	float: left;
+	white-space: nowrap;
+	}
+.content {	
+	font-size: 17px;
+	color: #273d4b;	
+	font-weight:200;
+	text-shadow: 0 1px 0px;
+	float:left;
+	
+	position: relative;
+	left: 80px;
+	top: -45px;	
+	white-space: nowrap;
+	width: 90px;
+}
+div.img
+  {  
+  left: 1px;  
+  float:left;
+  text-align:center;
+  max-height: 30px; max-width: 30px;
+  }
+div.img img
+  {
+  display:inline;
+  margin-top: 1px;
+  border:1px solid #ffffff;
+  }
+div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.desc
+  {  
+  font-size: 12px;
+  color: #c72e29;	
+  font-weight:bold;   
+  }
+  
+.savedCommentMouseOut { width:99%; min-height: 50px; margin-bottom: 10px;
           background-color:#F5F5F5; float:left; border: 1px solid #ccc; box-shadow: inset 5px 5px 8px -5px #FFFFFF; }
-.savedCommentMouseIn {  width:100%; min-height: 80px; margin-bottom: 10px;
+.savedCommentMouseIn {  width:100%; min-height: 90px; margin-bottom: 10px;
           background-color:#FFFFFF; float:left; border: 1px solid #ccc; box-shadow: inset 5px 5px 8px -5px #F5F5F5;}
 
 .tagsEdit { 
