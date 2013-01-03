@@ -35,22 +35,31 @@
 		}).click(function() {			
 			if( !$("#box").hasClass("placeholder") )
 			{				
-				/*$("#savedComments").prepend("<div id=\"savedBox\" class=\"savedComment savedCommentMouseOut\">"+$("#box").text()+"</div>");
-			    $( '.savedComment' ).mouseover(function () 
+				$("#savedComments").prepend("<div id=\"savedBox\" class=\"savedComment savedCommentMouseOut\" age=\"July 17, 2008\"> "+$("#box").text()+"</div>");
+			    $( '.savedComment' ).click(function () 
 						   { 
-							   $(this).addClass("savedCommentMouseIn");	
-							   $(this).removeClass("savedCommentMouseOut");
-						   }).mouseout(function(){
-							   $(this).addClass("savedCommentMouseOut");
-							   $(this).removeClass("savedCommentMouseIn");
-							});*/
-				$("#savedComments").prepend("<div class=\"ui-accordion-group\"><div class=\"ui-accordion-header\"><a href=\"#\">panel 1</a></div><div class=\"ui-accordion-content\" style=\"height: 100px;\"><div style=\"padding:10px;\">My Contents</div></div></div>");
-				$("#savedComments").accordion({ 
-			    	header: '.ui-accordion-header', 
-			    	event:'mouseover' 
-			    	}); 
-				$("#box").html($("#box").data("placeholder"));           
-	            $("#box").addClass("placeholder");          
+			    		       if ( $(this).hasClass("savedCommentMouseIn") )
+			    		       {
+			    		    	   $(this).addClass("savedCommentMouseOut",200);
+			    		    	   $(this).removeClass("savedCommentMouseIn",200);
+			    		       }
+			    		       else
+			    		       {
+								   $(this).addClass("savedCommentMouseIn",500);	
+								   $(this).removeClass("savedCommentMouseOut",200);			    		    	   
+			    		       }
+
+						   }).mouseout( function () 
+						   {
+							   if ( $(this).hasClass("savedCommentMouseIn") )
+			    		       {
+			    		    	   $(this).addClass("savedCommentMouseOut",200);
+			    		    	   $(this).removeClass("savedCommentMouseIn",500);
+			    		       }						   
+						   });				
+	            $( '.savedComment' ).timeago();
+			    $("#box").html($("#box").data("placeholder"));           
+	            $("#box").addClass("placeholder");  
 				
 			}			
 		});

@@ -2,10 +2,10 @@
 
 .highlight { background:yellow; }
 
-.savedCommentMouseOut { width:99%; min-height: 25px; margin-bottom: 10px;
-          background-color:#D6EDFC; float:left; border: 1px solid #ccc; }
-.savedCommentMouseIn {  width:100%; min-height: 50px; margin-bottom: 20px;
-          background-color:#FFCC00; float:left; border: 1px solid #ccc; }
+.savedCommentMouseOut { width:99%; min-height: 40px; margin-bottom: 10px;
+          background-color:#F5F5F5; float:left; border: 1px solid #ccc; box-shadow: inset 5px 5px 8px -5px #FFFFFF; }
+.savedCommentMouseIn {  width:100%; min-height: 80px; margin-bottom: 10px;
+          background-color:#FFFFFF; float:left; border: 1px solid #ccc; box-shadow: inset 5px 5px 8px -5px #F5F5F5;}
 
 .tagsEdit { 
 	background: transparent;

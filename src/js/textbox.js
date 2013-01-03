@@ -24,11 +24,8 @@ $(document).ready(function(){
     } 
     
     $( "#circle" ).draggable();    
-    $( '#container').layout();    
-    $('#savedComments').accordion({ 
-    	header: '.ui-accordion-header', 
-    	event:'mouseover' 
-    	});    
+    $( '#container').layout(); 
+
     /*$('.tagsNonEdit').openDOMWindow({ 
     	eventType:'click', 
     	loader:0, 
